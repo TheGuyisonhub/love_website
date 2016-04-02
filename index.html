@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html xmlns = "http://www.w3.org/1999/xhtml" xml:lang = "en" lang = "en">
+<head>
+  <title>Happy One Year!</title>
+  <meta http-equiv = "content-type" content = "text/html; charset = UTF-8">
+  <link rel = "shortcut icon" href = "cherry.ico" >
+
+  <!--I don't love this typeface. But there is not any other better choice!-->
+  <style type="text/css">
+  		@font-face {
+  			font-family: digit;
+  			src: url('digital-7_mono.ttf') format("truetype");
+  		}
+  </style>
+
+<!--css  -->
+  <!--google chrome font  -->
+  <link href="http://fonts.googleapis.com/css?family=Lobster+Two:700&v2" rel="stylesheet" type="text/css"/>
+  <link href="css/dev.css" type = "text/css" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/default.css"/>
+  <link rel="stylesheet" href="css/load.css"/>
+  <link rel="stylesheet" href="css/curtain.css"/>
+  <link rel="stylesheet" href="css/ele.css"/>
+  <link rel="stylesheet" href="css/style.css"/>
+
+<!--javascript -->
+  <script type="text/javascript" src="js/curtain.js"></script>
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/load.js"></script>
+  <script type="text/javascript" src="js/jquery.proximity.js"></script>
+  <script type="text/javascript" src="js/time.js"></script>
+
+
+</head>
+
+<!--============================================================================-->
+<body>
+  <div class = "loading" id = "onload"></div>
+  <!--background music is <what are words> Chris Medina -->
+
+  <ul class = "menu">
+    <li><button href="#up">∧</button></li>
+    <li><button href="#down">∨</button></li>
+  </ul>
+
+<!--curtain links -->
+  <ul id="curtain-links-menu">
+      <li><a href="#lovetime" class="curtain-links">Love Time</a></li>
+      <li><a href="#lovebg" class="curtain-links">Love BG</a></li>
+      <li><a href="#loveletter" class="curtain-links">Love Letter</a></li>
+      <li><a href="#lovecover" class="curtain-links">Love Cover</a></li>
+  </ul>
+
+<ol class="curtains">
+    <li id="lovetime" class="cover">
+    <article>
+		  <canvas id="myCanvas" width="700" height="700"></canvas>
+      <div id="time" style="display:none;">
+		    <h1>Yujie, I have fallen in love with you for</h1>
+		    <div id="elapseClock"></div>
+        <h10>Love u forever. --Mihawk Hu</h10>
+		    <div id="arrow" style="text-align:center;margin-top:100px;display:none;"><img src="image/tiger.gif" /></div>
+      </div>
+      </article>
+    </li>
+
+</ol>
+
+
+
+<audio src="music/What_are_words.mp3" autoplay = "autoplay" loop = "true" />
+
+
+</body>
+</html>
