@@ -26,21 +26,21 @@
 <!--javascript -->
   <script type="text/javascript" src="js/curtain.js"></script>
   <script type="text/javascript" src="js/jquery.js"></script>
-  <script type="text/javascript" src="js/load.js"></script>
   <script type="text/javascript" src="js/jquery.proximity.js"></script>
-  <script type="text/javascript" src="js/time.js"></script>
+
 
 
 </head>
 
 <!--============================================================================-->
 <body>
-  <div class = "loading" id = "onload"></div>
-  <!--background music is <what are words> Chris Medina -->
+  <div class = "loading" id = "onload">
+    <span>Loading......</span>
+  </div>
 
   <ul class = "menu">
-    <li><button href="#up">∧</button></li>
-    <li><button href="#down">∨</button></li>
+    <li><button href="#up">Up</button></li>
+    <li><button href="#down">Down</button></li>
   </ul>
 
 <!--curtain links -->
@@ -57,9 +57,9 @@
 		  <canvas id="myCanvas" width="700" height="700"></canvas>
       <div id="time" style="display:none;">
 		    <h1>Yujie, I have fallen in love with you for</h1>
-		    <div id="elapseClock"></div>
-        <h10>Love u forever. --Mihawk Hu</h10>
-		    <div id="arrow" style="text-align:center;margin-top:100px;display:none;"><img src="image/tiger.gif" /></div>
+		    <div id="clock"></div>
+        <h4 style = "max-resolution: 100px;">Love u forever. --Mihawk Hu</h4>
+		    <div id="tiger" style="text-align:center;margin-top:60px;display:none;"><img src="image/tiger.gif"/></div>
       </div>
       </article>
     </li>
@@ -67,8 +67,11 @@
 </ol>
 
 
-
+<!--background music is <What are words> Chris Medina -->
 <audio src="music/What_are_words.mp3" autoplay = "autoplay" loop = "true" />
+
+<script type="text/javascript" src="js/ltime.js"></script>
+<script type="text/javascript" src="js/load.js"></script>
 
 
 </body>

@@ -3,7 +3,7 @@
 var start;    //surprise variable
 window.onload = function () {
     if(document.all) {  //judge whether the browser is IE
-	    start = setInterval('loading()', 1000);
+	    start = setInterval('loading()', 1800);
     } else {
       var load = $('#onload');
       load.fadeOut(1000);
@@ -13,12 +13,10 @@ window.onload = function () {
 
 function loading() {
     if (document.readyState == "complete") {
-        try {
           var load = $('#onload');
-	        load.fadeOut(1000);
+	        load.fadeOut(1800);
           loadheart();
           clearInterval(start);
-        } catch(err) { return true; }
     }
 }
 
@@ -73,7 +71,7 @@ function fillHeart() {
 }
 
 function drawText() {
-    $("#time").fadeIn(1000,function(){$("#arrow").fadeIn(3000);});
+    $("#time").fadeIn(500,function(){$("#tiger").fadeIn(1000);});
 }
 
 function isAngle(a) {

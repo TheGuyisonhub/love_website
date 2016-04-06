@@ -1,13 +1,14 @@
-#elapseClock {
+#clock {
 	text-align: center;
 	font-size: 20px;
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
 
-#elapseClock .digit{
+#clock
+.digit{
 	font-family: "digit";
-	font-size: 36px;
+	font-size: 45px;
 }
 
 #time h1{
@@ -15,9 +16,9 @@
 	font-size: 50px;
 	font-family:'Lobster Two';
 }
-#time h10{
+#time h4{
 	text-align:center;
-	font-size: 20px;
+	font-size: 25px;
 	font-family:'Lobster Two';
 }
 
@@ -37,7 +38,7 @@
 	left:50%;
 	top:50%;
 	margin-left:-300px;
-	margin-top:-100px;
+	margin-top:-200px;
 	color:black;
 }
 
