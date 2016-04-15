@@ -1,4 +1,3 @@
-//Copyright @ Dylanvivi.github.io
 //loading.....
 var start;    //surprise variable
 window.onload = function () {
@@ -20,6 +19,7 @@ function loading() {
     }
 }
 
+//Copyright (c) Dylanvivi.github.io
 function loadheart(){
 	if(!document.createElement('canvas').getContext) { //judge whether the browser support canvas
 			var msg = document.createElement("div");

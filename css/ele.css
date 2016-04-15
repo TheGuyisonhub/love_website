@@ -4,17 +4,16 @@
     z-index: 2;
     position: fixed;
     bottom:0;
-    text-align: right
-    ;
-    left: 0;
+    text-align:right;
+    right: 0;
 }
 
 .menu button {
-    display: none;
-    height: 50px;
-    width: 70px;
-    line-height: 50px;
-    background-color: #383850;
+    display: block;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    background-color: #233456;
     position: relative;
     text-align: center;
     color: #e6e6e6;
@@ -69,4 +68,15 @@
 	position: fixed;
 	bottom: 0;
 	left: 25%;
+}
+
+/*copyright in last curtain*/
+#copyright{
+	margin-top: 15px;
+	text-align: center;
+	width:100%;
+	color:#000000;
+}
+#copyright a{
+	color:#000000;
 }

@@ -1,78 +1,205 @@
 <!DOCTYPE HTML>
-<html xmlns = "http://www.w3.org/1999/xhtml" xml:lang = "en" lang = "en">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!--本网页各种图片均源于网络,如有侵权,请联系 mihawkhu@gmail.com, 马上删除-->
 <head>
-  <title>Happy One Year!</title>
-  <meta http-equiv = "content-type" content = "text/html; charset = UTF-8">
-  <link rel = "shortcut icon" href = "cherry.ico" >
+    <title>Happy One Year!</title>
+    <meta http-equiv="content-type" content="text/html; charset = UTF-8">
+    <link rel="shortcut icon" href="cherry.ico">
 
-  <!--I don't love this typeface. But there is not any other better choice!-->
-  <style type="text/css">
-  		@font-face {
-  			font-family: digit;
-  			src: url('digital-7_mono.ttf') format("truetype");
-  		}
-  </style>
+    <!--To be honest. I don't love this font. But there is not any other better font to display a clock-->
+    <style type="text/css">
+        @font-face {
+            font-family: digit;
+            src: url('digital-7_mono.ttf') format("truetype");
+        }
+    </style>
 
-<!--css  -->
-  <!--google chrome font  -->
-  <link href="http://fonts.googleapis.com/css?family=Lobster+Two:700&v2" rel="stylesheet" type="text/css"/>
-  <link href="css/dev.css" type = "text/css" rel="stylesheet"/>
-  <link rel="stylesheet" href="css/default.css"/>
-  <link rel="stylesheet" href="css/load.css"/>
-  <link rel="stylesheet" href="css/curtain.css"/>
-  <link rel="stylesheet" href="css/ele.css"/>
-  <link rel="stylesheet" href="css/style.css"/>
+    <!--Some fonts from google.com/fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Tillana:600" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lobster+Two:700italic" rel="stylesheet" type="text/css" />
+    
+    <!--css  -->
+    <link href="css/dev.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/default.css" />
+    <link rel="stylesheet" href="css/load.css" />
+    <link rel="stylesheet" href="css/curtain.css" />
+    <link rel="stylesheet" href="css/ele.css" />
+    <link rel="stylesheet" href="css/style.css" />
 
-<!--javascript -->
-  <script type="text/javascript" src="js/curtain.js"></script>
-  <script type="text/javascript" src="js/jquery.js"></script>
-  <script type="text/javascript" src="js/jquery.proximity.js"></script>
-
-
+    <!--jquery -->
+    <script type="text/javascript" src="js/jquery.js"></script>
 
 </head>
 
-<!--============================================================================-->
+<!--===============================================================================-->
 <body>
-  <div class = "loading" id = "onload">
-    <span>Loading......</span>
-  </div>
+    <div class="loading" id="onload">
+        <span>Loading......</span>
+    </div>
 
-  <ul class = "menu">
-    <li><button href="#up">Up</button></li>
-    <li><button href="#down">Down</button></li>
-  </ul>
+    <ul class="menu">
+        <li>
+            <button href="#up">▲</button>
+        </li>
+        <li>
+            <button href="#down">▼</button>
+        </li>
+    </ul>
 
-<!--curtain links -->
-  <ul id="curtain-links-menu">
-      <li><a href="#lovetime" class="curtain-links">Love Time</a></li>
-      <li><a href="#lovebg" class="curtain-links">Love BG</a></li>
-      <li><a href="#loveletter" class="curtain-links">Love Letter</a></li>
-      <li><a href="#lovecover" class="curtain-links">Love Cover</a></li>
-  </ul>
+    <!--curtains  -->
+    <ol class="curtains">
+        <!--curtain one-->
+        <li id="lovetime" class="cover">
+            <article>
+                <canvas id="myCanvas" width="700" height="700"></canvas>
+                <div id="time" style="display:none;">
+                    <h1>Yujie, I have fallen in love with you for</h1>
+                    <div id="clock"></div>
+                    <h4 style="max-resolution: 100px;">Love u forever. --Mihawk Hu</h4>
+                    <div id="tiger" style="text-align:center;margin-top:60px;display:none;"><img src="image/tiger.gif" /></div>
+                </div>
+            </article>
+        </li>
 
-<ol class="curtains">
-    <li id="lovetime" class="cover">
-    <article>
-		  <canvas id="myCanvas" width="700" height="700"></canvas>
-      <div id="time" style="display:none;">
-		    <h1>Yujie, I have fallen in love with you for</h1>
-		    <div id="clock"></div>
-        <h4 style = "max-resolution: 100px;">Love u forever. --Mihawk Hu</h4>
-		    <div id="tiger" style="text-align:center;margin-top:60px;display:none;"><img src="image/tiger.gif"/></div>
-      </div>
-      </article>
-    </li>
+        <!--curtain two-->
+        <li id="page1" class="cover">
+      		<div class="cover-wrapper">
+      			<img src="image/road.jpg"/>
+      			<span>Do you have a map? I just keep losing in your eyes.</span>
+      		</div>
+        </li>
 
-</ol>
+        <li class="way" id="way2tj">
+    			<div id="intro"><img src="image/colors.jpg" class="first"></div>
+    			<div id="story">
+    				<div class="row1 col1">
+    				<h1 class="size3">   </h1>
+    				<h2>KeyWords：</h2>
+    				<blockquote class="width4 ">
+    				<p></p>
+    				<p></p>
+    				</blockquote>
+    				</div>
+    			</div>
+    		</li>
+
+        <li id="loveletter">
+              <div class="fixed">
+                  <h1>Love Letter</h1>
+      			    <p>To the world you may be one person, but to me, you are the world ~</p>
+              </div>
+              <div class="content-wrapper">
+      			    <ul class="steplist">
+                  <li class="step">
+            			<p style="text-align: center;">
+            			<img class="pie-img aligncenter" src="http://lh3.ggpht.com/-yiMQiABYlXA/T6yzISb1qgI/AAAAAAAAAd4/9hwXBH02wDI/wKgBt0-O4bbGU4BoAAMg9DP0tN065.groupinfo.w600._%2525E5%252589%2525AF%2525E6%25259C%2525AC.jpg?imgmax=512"/>
+            			</p>
+            			<p>…………</p>
+            			</li>
+      			    </ul>
+              </div>
+        </li>
+
+        <li class="way" id="smiles">
+          <h1 class="title">O(∩_∩)O~</h1>
+          <section class="pe-container">
+            <ul id="pe-thumbs" class="pe-thumbs">
+              <li><a href="#"><img src="image/colors.jpg" /><div class="pe-description"><h3>Quarrel</h3><p></p></div></a></li>
+              <li><a href="#"><img src="image/colors.jpg" /><div class="pe-description"><h3>Travel</h3><p></p></div></a></li>
+              <li><a href="#"><img src="image/colors.jpg" /><div class="pe-description"><h3>The Moment</h3><p></p></div></a></li>
+              <li><a href="#"><img src="image/colors.jpg" /><div class="pe-description"><h3>Water</h3><p></p></div></a></li>
+              <li><a href="#"><img src="image/colors.jpg" /><div class="pe-description"><h3>Crazys</h3><p></p></div></a></li>
+              <li><a href="#"><img src="image/colors.jpg" /><div class="pe-description"><h3>Sea</h3><p></p></div></a></li>
+              <li><a href="#"><img src="image/colors.jpg" /><div class="pe-description"><h3>Snack</h3><p></p></div></a></li>
+              <li><a href="#"><img src="image/colors.jpg" /><div class="pe-description"><h3>Ship</h3><p></p></div></a></li>
+              <li><a href="#"><img src="image/colors.jpg" /><div class="pe-description"><h3>Love is always young</h3><p></p></div></a></li>
+              <li><a href="#"><img src="image/colors.jpg" /><div class="pe-description"><h3>Because of you</h3><p></p></div></a></li>
+              <li><a href="#"><img src="image/colors.jpg" /><div class="pe-description"><h3>Smile </h3><p></p></div></a></li>
+              <li><a href="#"><img src="image/colors.jpg" /><div class="pe-description"><h3>Smile</h3><p></p></div></a></li>
+              <li><a href="#"><img src="image/colors.jpg" /><div class="pe-description"><h3>Memories</h3><p></p></div></a></li>
+              <li><a href="#"><img src="image/colors.jpg" /><div class="pe-description"><h3>Happiness</h3><p>This is LOVE ...</p></div></a></li>
+              <li><a href="#"><img src="image/colors.jpg" /><div class="pe-description"><h3>Miracle</h3><p></p></div></a></li>
+              <li><a href="#"><img src="image/colors.jpg" /><div class="pe-description"><h3>Jump</h3><p></p></div></a></li>
+              <li><a href="#"><img src="image/colors.jpg" /><div class="pe-description"><h3>The air to breathe</h3><p></p></div></a></li>
+              <li><a href="#"><img src="image/colors.jpg" /><div class="pe-description"><h3>Shy</h3><p></p></div></a></li>
+              <li><a href="#"><img src="image/colors.jpg" /><div class="pe-description"><h3>See What</h3><p></p></div></a></li>
+              <li><a href="#"><img src="image/colors.jpg" /><div class="pe-description"><h3>Happy</h3><p></p></div></a></li>
+              <li><a href="#"><img src="image/colors.jpg" /><div class="pe-description"><h3>Belong Together</h3><p></p></div></a></li>
+              <li><a href="#"><img src="image/colors.jpg" /><div class="pe-description"><h3>Considerate</h3><p></p></div></a></li>
+              <li><a href="#"><img src="image/colors.jpg" /><div class="pe-description"><h3>Look</h3><p></p></div></a></li>
+              <li><a href="#"><img src="image/colors.jpg" /><div class="pe-description"><h3>Traveling Alone</h3><p></p></div></a></li>
+              <li><a href="#"><img src="image/colors.jpg" /><div class="pe-description"><h3>Couple face</h3><p></p></div></a></li>
+              <li><a href="#"><img src="image/colors.jpg" /><div class="pe-description"><h3>Thankful</h3><p></p></div></a></li>
+              <li><a href="#"><img src="image/colors.jpg" /><div class="pe-description"><h3>Lover</h3><p></p></div></a></li>
+              <li><a href="#"><img src="image/colors.jpg" /><div class="pe-description"><h3>New Year</h3><p></p></div></a></li>
+              <li><a href="#"><img src="image/colors.jpg" /><div class="pe-description"><h3>Sunshine</h3><p></p></div></a></li>
+              <li><a href="#"><img src="image/colors.jpg" /><div class="pe-description"><h3>My Life</h3><p></p></div></a></li>
+              <li><a href="#"><img src="image/colors.jpg" /><div class="pe-description"><h3>Winter</h3><p></p></div></a></li>
+              <li><a href="#"><img src="image/colors.jpg" /><div class="pe-description"><h3>My bag Your Smile</h3><p></p></div></a></li>
+              <li><a href="#"><img src="image/colors.jpg" /><div class="pe-description"><h3>July 20, 2011</h3><p></p></div></a></li>
+              <li><a href="#"><img src="image/colors.jpg" /><div class="pe-description"><h3>KTV</h3><p></p></div></a></li>
+              <li><a href="#"><img src="image/colors.jpg" /><div class="pe-description"><h3>Kiss</h3><p></p></div></a></li>
+              <li><a href="#"><img src="image/colors.jpg" /><div class="pe-description"><h3>Forever</h3><p></p></div></a></li>
+              <li><a href="#"><img src="image/colors.jpg" /><div class="pe-description"><h3>Forever</h3><p></p></div></a></li>
+              <li><a href="#"><img src="image/colors.jpg" /><div class="pe-description"><h3>Forever</h3><p></p></div></a></li>
+              <li><a href="#"><img src="image/colors.jpg" /><div class="pe-description"><h3>Forever</h3><p></p></div></a></li>
+              <li><a href="#"><img src="image/colors.jpg" /><div class="pe-description"><h3>Forever</h3><p></p></div></a></li>
+              <li><a href="#"><img src="image/colors.jpg" /><div class="pe-description"><h3>Forever</h3><p></p></div></a></li>
+              <li><a href="#"><img src="image/colors.jpg" /><div class="pe-description"><h3>Forever</h3><p></p></div></a></li>
+              <li><a href="#"><img src="image/colors.jpg" /><div class="pe-description"><h3>Forever</h3><p></p></div></a></li>
+              <li><a href="#"><img src="image/colors.jpg" /><div class="pe-description"><h3>Forever</h3><p></p></div></a></li>
+              <li><a href="#"><img src="image/colors.jpg" /><div class="pe-description"><h3>Forever</h3><p></p></div></a></li>
+              <li><a href="#"><img src="image/colors.jpg" /><div class="pe-description"><h3>Forever</h3><p></p></div></a></li>
+              <li><a href="#"><img src="image/colors.jpg" /><div class="pe-description"><h3>Forever</h3><p></p></div></a></li>
+              <li><a href="#"><img src="image/colors.jpg" /><div class="pe-description"><h3>Forever</h3><p></p></div></a></li>
+              <li><a href="#"><img src="image/colors.jpg" /><div class="pe-description"><h3>Forever</h3><p></p></div></a></li>
+              <li><a href="#"><img src="image/colors.jpg" /><div class="pe-description"><h3>Forever</h3><p></p></div></a></li>
+              <li><a href="#"><img src="image/colors.jpg" /><div class="pe-description"><h3>Forever</h3><p></p></div></a></li>
+              <li><a href="#"><img src="image/colors.jpg" /><div class="pe-description"><h3>Forever</h3><p></p></div></a></li>
+              <li><a href="#"><img src="image/colors.jpg" /><div class="pe-description"><h3>Forever</h3><p></p></div></a></li>
+              <li><a href="#"><img src="image/colors.jpg" /><div class="pe-description"><h3>Forever</h3><p></p></div></a></li>
+              <li><a href="#"><img src="image/colors.jpg" /><div class="pe-description"><h3>Forever</h3><p></p></div></a></li>
+              <li><a href="#"><img src="image/colors.jpg" /><div class="pe-description"><h3>Forever</h3><p></p></div></a></li>
+              <li><a href="#"><img src="image/colors.jpg" /><div class="pe-description"><h3>Forever</h3><p></p></div></a></li>
+              <li><a href="#"><img src="image/colors.jpg" /><div class="pe-description"><h3>Forever</h3><p></p></div></a></li>
+              <li><a href="#"><img src="image/colors.jpg" /><div class="pe-description"><h3>Forever</h3><p></p></div></a></li>
+              <li><a href="#"><img src="image/colors.jpg" /><div class="pe-description"><h3>Forever</h3><p></p></div></a></li>
+              <li><a href="#"><img src="image/colors.jpg" /><div class="pe-description"><h3>Forever</h3><p></p></div></a></li>
+              <li><a href="#"><img src="image/colors.jpg" /><div class="pe-description"><h3>Forever</h3><p></p></div></a></li>
+              <li><a href="#"><img src="image/colors.jpg" /><div class="pe-description"><h3>Forever</h3><p></p></div></a></li>
+              <li><a href="#"><img src="image/colors.jpg" /><div class="pe-description"><h3>Forever</h3><p></p></div></a></li>
+            </ul>
+          </section>
+        </li>
+
+        <li id="way2" class="way">
+          <div id="intro2"><img src="image/end.jpg" class="first"></div>
+          <div id="end">
+            <div class="row1 col5">
+            </div>
+            <div id="copyright">
+			          Copyright (c) 2016 <a href="https://github.com/MihawkHu">Mihawk Hu</a>&nbsp;&nbsp;<a href="https://github.com/MihawkHu/love_website">Repository</a><br>
+                GitHub: <a href="https://github.com/MihawkHu">MihawkHu</a>&nbsp;&nbsp;&nbsp;&nbsp;E-mail: MihawkHu@gmail.com
+		        </div>
+          </div>
+        </li>
 
 
-<!--background music is <What are words> Chris Medina -->
-<audio src="music/What_are_words.mp3" autoplay = "autoplay" loop = "true" />
+    </ol>
 
-<script type="text/javascript" src="js/ltime.js"></script>
-<script type="text/javascript" src="js/load.js"></script>
 
+    <!--Background music is <What are words> Chris Medina -->
+    <audio src="music/What_are_words.mp3" autoplay="autoplay" loop="true" />
+
+    <!--javascript  -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/curtain.js"></script>
+    <script type="text/javascript" src="js/photoshow.js"></script>
+    <script type="text/javascript" src="js/jquery.proximity.js"></script>
+    <script type="text/javascript" src="js/load.js"></script>
+    <script type="text/javascript" src="js/ltime.js"></script>
 
 </body>
+
 </html>
