@@ -558,10 +558,10 @@
 })(jQuery, window, document);
 
 // change curtain by menu
-$(function(){
-   $('.curtains').curtain({
-       scrollSpeed: 350,
-       controls: '.menu',
-       curtainLinks: '.curtain-links'
-   });
+$(function() {
+    $('.curtains').curtain({
+        scrollSpeed: 500,
+        controls: '.menu',
+        curtainLinks: '.curtain-links'
+    });
 });

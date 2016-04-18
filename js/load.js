@@ -1,36 +1,38 @@
 //loading.....
-var start;    //surprise variable
-window.onload = function () {
-    if(document.all) {  //judge whether the browser is IE
-	    start = setInterval('loading()', 1800);
+var start; //surprise variable
+window.onload = function() {
+    if (document.all) { //judge whether the browser is IE
+        start = setInterval('loading()', 1800);
     } else {
-      var load = $('#onload');
-      load.fadeOut(1000);
-      loadheart();
+        var load = $('#onload');
+        load.fadeOut(1000);
+        loadheart();
     }
 }
 
 function loading() {
     if (document.readyState == "complete") {
-          var load = $('#onload');
-	        load.fadeOut(1800);
-          loadheart();
-          clearInterval(start);
+        var load = $('#onload');
+        load.fadeOut(1800);
+        loadheart();
+        clearInterval(start);
     }
 }
 
 //Copyright (c) Dylanvivi.github.io
-function loadheart(){
-	if(!document.createElement('canvas').getContext) { //judge whether the browser support canvas
-			var msg = document.createElement("div");
-			msg.id = "errorMsg";
-			msg.innerHTML = "Sorry, please don't use IE browser or 360 safey browser.<br/>I recommend Chrome/Firefox/Safari for you";
-			document.body.appendChild(msg);
-		} else startAnimation();
+function loadheart() {
+    if (!document.createElement('canvas').getContext) { //judge whether the browser support canvas
+        var msg = document.createElement("div");
+        msg.id = "errorMsg";
+        msg.innerHTML = "Sorry, please don't use IE browser or 360 safey browser.<br/>I recommend Chrome/Firefox/Safari for you";
+        document.body.appendChild(msg);
+    } else startAnimation();
 }
 
 // heart animation
-var r = 20, i, time = 20, num = 360;
+var r = 20,
+    i, time = 20,
+    num = 360;
 var radian, radianDecrement, intervalId, gap;
 var c = document.getElementById("myCanvas");
 var ctx = c.getContext("2d");
@@ -57,7 +59,7 @@ function paintHeart() {
         clearInterval(intervalId);
         i = 0;
         intervalId = setInterval("fillHeart()", 50)
-		drawText();
+        drawText();
     }
 }
 
@@ -71,7 +73,9 @@ function fillHeart() {
 }
 
 function drawText() {
-    $("#time").fadeIn(500,function(){$("#tiger").fadeIn(1000);});
+    $("#time").fadeIn(500, function() {
+        $("#pika").fadeIn(1000);
+    });
 }
 
 function isAngle(a) {
@@ -113,22 +117,24 @@ function getX(t) {
 
 function getY(t) {
     return 300 - r * (13 * Math.cos(t) - 5 * Math.cos(2 * t) - 2 * Math.cos(3 * t) - Math.cos(4 * t))
-} (function(a) {
+}(function(a) {
     a.fn.typewriter = function(g) {
         this.each(function() {
-            var d = a(this), c = d.html(), b = 0;
+            var d = a(this),
+                c = d.html(),
+                b = 0;
             d.html("");
             var e = setInterval(function() {
                 var f = c.substr(b, 1);
                 if (f == "<") {
                     b = c.indexOf(">", b) + 1;
                 } else b++;
-                d.html(c.substring(0, b) + (b & 1 ? "_": ""));
+                d.html(c.substring(0, b) + (b & 1 ? "_" : ""));
                 if (b >= c.length) {
                     clearInterval(e);
                     $("#myCanvas").fadeTo(3000, 1, drawHearts)
                 }
-            },g)
+            }, g)
         });
         return this;
     }
