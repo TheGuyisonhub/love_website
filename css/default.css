@@ -41,17 +41,17 @@ pre {
     border-radius: 3px;
 }
 
-#smiles{
-	background-color:#f2eada;
+#photoshow{
+	background-color:#f7f38e;
 }
 
 .title{
 	font-weight: normal;
-	text-shadow: 0 1px rgba(0,0,0,.8);
+	text-shadow: 0 2px rgba(255, 255, 255, 0.8);
 	margin: 20px 0 20px 0;
 	padding: 10px;
-	color: #555;
-	/*text-weight: bold;*/
-	font-family: "方正姚体","华文琥珀","微软雅黑";
+	color: #292727;
+	font-family: "Lobster Two";
+  font-size: 45px;
 	text-align:center;
 }
