@@ -23,8 +23,8 @@ function timeElapse(date) {
 
 //set the beginning time
 var begin = new Date();
-begin.setFullYear(2015, 3, 24); //real date is 2015-4-24, but there is some bug, so I have to set 2015-3-24
-begin.setHours(22);
+begin.setFullYear(2024,1, 24); //real date is 2015-4-24, but there is some bug, so I have to set 2015-3-24
+begin.setHours(23);
 begin.setMinutes(00);
 begin.setSeconds(0);
 begin.setMilliseconds(0);
